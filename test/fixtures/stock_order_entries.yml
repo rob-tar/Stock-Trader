@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Shares: 1
+  Symbol: MyString
+
+two:
+  Shares: 1
+  Symbol: MyString
