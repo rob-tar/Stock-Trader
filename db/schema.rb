@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150331214406) do
+ActiveRecord::Schema.define(version: 20150402040514) do
 
   create_table "stock_order_entries", force: :cascade do |t|
     t.integer  "Shares"
     t.string   "Symbol"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trades", force: :cascade do |t|
+    t.integer  "shares"
+    t.string   "symbol"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

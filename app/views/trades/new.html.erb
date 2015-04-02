@@ -1,1 +1,19 @@
 <h1>Trade</h1>
+
+<br><br>
+
+<%= form_for :trades, url: trades_path do |f| %>
+  <p>
+    <%= f.label :'Shares: '  %>
+    <%= f.text_field :shares %>
+  </p>
+
+   <p>
+    <%= f.label :'Symbol: ' %>
+    <%= f.text_field :symbol %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
