@@ -1,3 +1,35 @@
-<h1>Welcome to Stock Trader</h1>
 
-<p>Login Page</p>
+<style>
+
+	h1 {
+		font-size: 400%;
+		text-align: center;
+	}
+
+	p {
+		font-size: 100%;
+	}
+
+	#p {
+		font-size: 150%;
+	}
+
+</style>
+
+<script type="text/javascript" src="../../assets/javascripts/badLogin.js"></script>
+
+
+<%= image_tag('dollar.jpg', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: fixed; top: 10px; left: 10px;') %>
+
+<%= Welcome to Stock Trader %>
+
+<%= image_tag('dollar.jpg', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: fixed; top: 10px; right: 10px;') %>
+		
+<br /></br /><br /></br /><br /></br />
+
+<form >
+	<p class="login">Login</p>
+	User Name:&nbsp<input type="text" name="uname" value="" /><br />
+	Password:&nbsp&nbsp&nbsp  <input type="text" name="pword" value="" /><br />
+	<input type="submit" value="login" onclick="msg()" />
+</formm>
