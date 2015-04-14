@@ -1,7 +1,18 @@
 
 <style>
 
+	#form {
+		border-color:#FF0000;
+		border-top: solid;
+		border-bottom: solid;
+		color:#FAEC8B;
+		text-align: center;
+	}
 	h1 {
+		border-color:#FF0000;
+		border-top: solid;
+		border-bottom: solid;
+		color:#FAEC8B;
 		font-size: 400%;
 		text-align: center;
 	}
@@ -14,21 +25,29 @@
 		font-size: 150%;
 	}
 
+
 </style>
 
 <script type="text/javascript" src="../../assets/javascripts/badLogin.js"></script>
 
 
-<%= image_tag('dollar.jpg', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: fixed; top: 10px; left: 10px;') %>
+<%= image_tag('dollar.jpg', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: fixed; top: 20px; left: 10px;') %>
 
-<h1>Hello </h1>
-<%= image_tag('dollar.jpg', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: fixed; top: 10px; right: 10px;') %>
+<h1>Welcome to <br />Stock Trader</h1>
+
+<%= image_tag('dollar.jpg', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: fixed; top: 20px; right: 10px;') %>
 		
 <br /></br /><br /></br /><br /></br />
 
-<form >
-	<p class="login">Login</p>
+<form id ="form">
+	<p style="margin-right:180px">Login</p>
 	User Name:&nbsp<input type="text" name="uname" value="" /><br />
-	Password:&nbsp&nbsp&nbsp  <input type="text" name="pword" value="" /><br />
-	<input type="submit" value="login" onclick="msg()" />
+	Password:&nbsp&nbsp&nbsp  <input type="password" name="pword" value="" /><br />
+	<input style="margin-left:180px"type="submit" value="login" onclick="msg()" />
 </formm>
+
+
+
+
+
+
