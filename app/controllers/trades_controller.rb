@@ -1,22 +1,26 @@
 class TradesController < ApplicationController
   
+  def index
+    @trades = Trade.all
+  end
+
   def show
-    @trades = Trade.find(params[:id])
+    @trade = Trade.find(params[:id])
   end
 
   def new
   end
 
   def create
-    @trades = Trade.new(trades_params)
+    @trade = Trade.new(trade_params)
 
-    @trades.save
-    redirect_to @trades
+    @trade.save
+    redirect_to @trade
   end
   
   private
-    def trades_params
-      params.require(:trades).permit(:shares, :symbol)
+    def trade_params
+      params.require(:trade).permit(:shares, :symbol)
     end
 
 end

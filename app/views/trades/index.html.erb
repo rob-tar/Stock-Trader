@@ -1,0 +1,17 @@
+
+<h1>Listing Trades</h1>
+
+<table>
+  <tr>
+    <th>Shares</th>
+    <th>Symbol</th>
+  </tr>
+ 
+  <% @trades.each do |trade| %>
+    <tr>
+      <td><%= trade.shares %></td>
+      <td><%= trade.symbol %></td>
+    </tr>
+  <% end %>
+
+</table>

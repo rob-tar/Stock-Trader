@@ -1,19 +1,38 @@
-<h1>Trade</h1>
+<style>
 
-<br><br>
+#form {
+  text-align: center;
+}
+h1 {
+    font-size: 400%;
+}
 
-<%= form_for :trades, url: trades_path do |f| %>
-  <p>
-    <%= f.label :'Shares: '  %>
-    <%= f.text_field :shares %>
-  </p>
+h2 {
+  font-size: 225%;
+  text-align: center;
+}
 
-   <p>
-    <%= f.label :'Symbol: ' %>
-    <%= f.text_field :symbol %>
-  </p>
+</style>
 
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+
+<h1>Stock Trader</h1>
+<br />
+<h2 style="margin-right:100px">Trade</h2>
+
+<div id="form">
+  <%= form_for :trades, url: trades_path do |f| %>
+    <p>
+      <%= f.label :'Shares:'  %>
+      <%= f.text_field :shares %>
+    </p>
+
+     <p>
+      <%= f.label :'Symbol: ' %>
+      <%= f.text_field :symbol %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+<div>
