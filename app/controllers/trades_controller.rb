@@ -9,13 +9,17 @@ class TradesController < ApplicationController
   end
 
   def new
+    @trade = Trade.new
   end
 
   def create
     @trade = Trade.new(trade_params)
 
-    @trade.save
-    redirect_to @trade
+    if @trade.save
+      redirect_to @trade
+    else 
+      render 'new'
+    end
   end
   
   private

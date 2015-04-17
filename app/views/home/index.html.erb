@@ -5,7 +5,7 @@
 		color:#FAEC8B;
 		text-align: center;
 	}
-	
+
 	h1 {
 		border-color:#FF0000;
 		border-top: solid;
@@ -33,6 +33,9 @@
 
 <%= image_tag('dollar.png', :size => '100 x 100', :alt => 'dollar sign', :style => 'position: absolute; top: 20px; right: 10px;') %>
 		
+<%= link_to 'My Trades', controller: 'trades' %><br />
+<%= link_to 'Buy/Sell', '/trades/new' %>
+
 <br /></br /><br /></br /><br /></br />
 
 <form id ="form">

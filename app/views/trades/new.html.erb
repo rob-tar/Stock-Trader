@@ -19,6 +19,30 @@ h2 {
 <br />
 <h2 style="margin-right:100px">Trade</h2>
 
+
+
+
+
+<!--trades path url ??-->
+<%= form_for :trades, url: trades_path do |f| %>
+ 
+  <% if @trade.errors.any? %>
+    <div id="Unrecognized stock symbol">
+      <h2>
+        <%= pluralize(@trade.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @trade.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
 <div id="form">
   <%= form_for :trades, url: trades_path do |f| %>
     <p>
@@ -36,3 +60,9 @@ h2 {
     </p>
   <% end %>
 <div>
+
+<%= link_to 'Home', controller: 'home' %>
+
+  <% end %>
+
+
